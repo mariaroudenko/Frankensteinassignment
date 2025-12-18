@@ -21,6 +21,7 @@ h1 {
 </style>
 </head>
 <body>
+
 .gallery {
     display: flex;
   flex-wrap: wrap;
