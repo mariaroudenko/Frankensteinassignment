@@ -18,6 +18,30 @@ h1 {
   margin: 20px;
 }
 
+.flexlayout {
+  display: flex;
+  flex-direction: row;
+  column-count: 3;
+  margin: 1d0px;
+}
+
+
+img {
+    max-width: 100%;
+
+}
+
+table, th, td {
+  border: 1px solid green;
+  border-collapse: collapse;
+   padding: 10px;
+   text-align: center
+}
+
+p {
+    text-indent: 10px;
+}
+
 </style>
 </head>
 <body>
@@ -49,24 +73,6 @@ h1 {
 </body>
 
 
-
-.container-fluid {
-  display: flex;
-  flex-direction: row;
-}
-
-.container-fluid > div {
-  margin: 10px;
-}
-
-img {
-    max-width: 100%;
-
-}
-
-p {
-    text-indent: 10px;
-}
 
 /*a:link, a:visited {
   background-color: #f44336;
