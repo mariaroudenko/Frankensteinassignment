@@ -105,14 +105,47 @@ function documentLoader() {
   var PercyArray = Array.from(visible_percy);
     if (event.target.value == 'both') {
     //write an forEach() method that shows all the text written and modified by both hand (in black?). The forEach() method of Array instances executes a provided function once for each array element.
-     
+     texts.forEach(text => {
+  if (text.hand === "#MWS"|"#PBS" || text.rend === "blackink") {console.log(text.content);}
+});
     } else if (event.target.value == 'Mary') {
      //write an forEach() method that shows all the text written and modified by Mary in a different color (or highlight it) and the text by Percy in black. 
-     
+     elements.forEach(el => {
+  if (el.getAttribute("hand") === "#MWS") {
+    el.style.backgroundColor = "yellow";
+    el.style.color = "black";
+  } else if (el.getAttribute("hand") === "#PBS") {
+    el.style.color = "black";
+  }
+});
     } else {
      //write an forEach() method that shows all the text written and modified by Percy in a different color (or highlight it) and the text by Mary in black.
-    
+    const elements = document.querySelectorAll('[hand="#PBS"], [hand="#MWS"]');
+
+elements.forEach(el => {
+  if (el.getAttribute("hand") === "#PBS") {
+    el.style.backgroundColor = "lightblue";
+    el.style.color = "black";
+  } else if (el.getAttribute("hand") === "#MWS") {
+    el.style.color = "black";
+    el.style.backgroundColor = "transparent";
+  }
+});
     }
   }
 // write another function that will toggle the display of the deletions by clicking on a button
+function toggleDeletions() {
+  var deletions = document.querySelectorAll("del");
+
+  deletions.forEach(function(item) {
+    if (item.style.display === "none") {
+      item.style.display = "inline";
+    } else {
+      item.style.display = "none";
+    }
+  });
+}
+
+var button = document.getElementById("toggleDeletions");
+button.addEventListener("click", toggleDeletions);
 // EXTRA: write a function that will display the text as a reading text by clicking on a button or another dropdown list, meaning that all the deletions are removed and that the additions are shown inline (not in superscript)

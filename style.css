@@ -8,7 +8,7 @@ body {
 
 h1 {
     text-align: center;
-    text-decoration-line: underline
+    text-decoration-line: underline;
 }
 
 .intro {
@@ -17,26 +17,16 @@ h1 {
   border: 15px solid rgb(5, 55, 5);
   padding: 30px;
   margin: 20px;
+  position: relative;
+   left: 350px;
 }
 
-.flexlayout {
-  display: flex;
-  flex-direction: row;
-  column-count: 3;
-  margin: 1d0px;
-}
-
-
-img {
-    max-width: 100%;
-
-}
 
 table, th, td {
   border: 1px solid green;
   border-collapse: collapse;
    padding: 10px;
-   text-align: center
+   text-align: center;
 }
 
 .links, .links:visited {
@@ -56,35 +46,37 @@ p {
     text-indent: 10px;
 }
 
-</style>
-</head>
-<body>
 
-.gallery {
-    display: flex;
-  flex-wrap: wrap;
+div.gallery {
+  display: flex;
+  flex-direction: row;  
+  flex-wrap: wrap;      
+  gap: 10px;             
   justify-content: flex-start;
 }
 
-.gallery_item {
-    margin: 5px;
-  border: 1px solid #13330b;
+div.gallery_item {
+     border: 1px solid #13330b;
   width: 180px;
 }
 
-.gallery_item img {
-  width: 100%;
+div.gallery_item img {
+ width: 100%;
   height: auto;
+  display: block;
 }
 
-.gallery_item div.desc {
-  padding: 15px;
+div.gallery_item div.desc {
+    padding: 10px;
   text-align: center;
-
 }
-</style>
-</head>
-</body>
+
+.flexlayout {
+  display: flex;
+  flex-direction: row;
+  column-count: 3;
+  margin: 1d0px;
+}
 
 
 
