@@ -8,6 +8,34 @@
     <!-- <xsl:output method="xml" omit-xml-declaration="yes" indent="yes" /> -->
     <xsl:template match="tei:teiHeader"/>
 
+    <xsl:template match="tei:lb">
+        <br/>
+    </xsl:template>
+
+    <xsl:template match="tei:hi[@rend='superscript']">
+        <sup>
+            <xsl:apply-templates/>
+        </sup>
+    </xsl:template>
+
+    <xsl:template match="tei:hi[@rend='underline']">
+        <u>
+            <xsl:apply-templates/>
+        </u>
+    </xsl:template>
+
+    <xsl:template match="tei:fw[@rend='circled']">
+        <span class="circled-page">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+
+    <xsl:template match="tei:add[@place='overwrite']">
+        <span class="overwrite">
+            <xsl:apply-templates/>
+         </span>
+    </xsl:template>
+
     <xsl:template match="tei:body">
         <div class="row">
         <div class="col-3"><br/><br/><br/><br/><br/>
