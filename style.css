@@ -1,6 +1,6 @@
 body {
     background-color: rgb(182, 216, 191);
-}
+  }
 .starter-template {
   padding: 40px 15px;
   text-align: center;
@@ -29,23 +29,43 @@ table, th, td {
    text-align: center;
 }
 
+table.page-table {
+  border-collapse: collapse;
+}
+
 .links, .links:visited {
   background-color: #033020;
   color: white;
   padding: 14px 25px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: block;
 }
 
-a:hover, a:active {
-  background-color: rgb(19, 134, 38);
+
+a:hover {
+  background-color: rgb(162, 255, 0);
+}
+
+a:active{
+  background-color: rgb(42, 59, 17);
 }
 
 p {
     text-indent: 10px;
 }
 
+.horizontal-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.page-center {
+  display: flex;
+  justify-content: center; 
+}
 
 div.gallery {
   display: flex;
@@ -56,8 +76,9 @@ div.gallery {
 }
 
 div.gallery_item {
-     border: 1px solid #13330b;
+  border: 1px solid #13330b;
   width: 180px;
+  text-align: center;
 }
 
 div.gallery_item img {
@@ -69,13 +90,6 @@ div.gallery_item img {
 div.gallery_item div.desc {
     padding: 10px;
   text-align: center;
-}
-
-.flexlayout {
-  display: flex;
-  flex-direction: row;
-  column-count: 3;
-  margin: 1d0px;
 }
 
 
@@ -90,9 +104,7 @@ div.gallery_item div.desc {
 }
 */
 
-a:hover, a:active {
-  background-color: red;
-}
+
 .row {
     width: 100%;
     margin-left: 0;
