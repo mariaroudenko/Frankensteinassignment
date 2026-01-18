@@ -21,6 +21,12 @@ h1 {
    left: 350px;
 }
 
+.info {
+background-attachment:url("backgroundproject.avif");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+}
 
 table, th, td {
   border: 1px solid green;
@@ -34,17 +40,27 @@ table.page-table {
 }
 
 .links, .links:visited {
-  background-color: #033020;
-  color: white;
+  background-color: #0d7d56;
   padding: 14px 25px;
   text-align: center;
   text-decoration: none;
   display: block;
+  border-radius: 8px;
+  color: rgb(0, 0, 0);
 }
 
+.name{
+  text-align: center;
+   font-size: 10px;
+}
+
+a {
+  color: rgb(0, 0, 0);
+}
 
 a:hover {
   background-color: rgb(162, 255, 0);
+  color: rgb(13, 9, 11);
 }
 
 a:active{
@@ -53,6 +69,8 @@ a:active{
 
 p {
     text-indent: 10px;
+     font-size: 10px;
+     text-align:center;
 }
 
 .horizontal-row {
