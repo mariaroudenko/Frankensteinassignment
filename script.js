@@ -6,7 +6,6 @@ let folio_xml = tei_xml.concat(extension);
 let page = document.getElementById("page");
 let pageN = page.innerHTML;
 let number = Number(pageN);
-
 // Loading the IIIF manifest
 var mirador = Mirador.viewer({
   "id": "my-mirador",

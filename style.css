@@ -115,6 +115,15 @@ div.gallery_item div.desc {
   text-align: center;
 }
 
+.supraAdd {
+  vertical-align: super;
+  font-size: 0.8em;
+}
+
+.marginAdd {
+  display: none;
+}
+
 .page-nav {
   display: flex;
   justify-content: space-between;
