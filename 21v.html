@@ -43,6 +43,7 @@
         </ul>
       </div>
     </nav>
+    
     <div class="container-fluid">
       <h1>Frankenstein Volume I Draft in Chapter Sequence</h1>
       <span style="visibility:hidden" id='page'>45</span>
@@ -54,6 +55,12 @@
           <option value="Mary">Mary Shelley's Hand Highlighted</option>
           <option value="Percy">Percy Shelley's Hand Highlighted</option>
         </select>
+      </div>
+      <div>
+        <select onchange="selectHand(event)">
+          <option value="both">Both</option>
+        </select>
+          <button id="toggleDeletions">Toggle Deletions</button>
       </div>
       <div class="row">
         <div class="col-5">   

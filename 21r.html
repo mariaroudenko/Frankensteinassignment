@@ -15,6 +15,14 @@
     <link href="style.css" rel="stylesheet">
   </head>
   <body>
+
+    
+    <label for="handSelect">Show text by:</label>
+    <select id="handSelect" onchange="selectHand(event)">
+      <option value="both">Both</option>
+      <option value="Mary">Mary Shelley</option>
+      <option value="Percy">Percy Shelley</option>
+    </select>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">Frankenstein</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,6 +62,12 @@
           <option value="Mary">Mary Shelley's Hand Highlighted</option>
           <option value="Percy">Percy Shelley's Hand Highlighted</option>
         </select>
+      </div>
+      <div>
+        <select onchange="selectHand(event)">
+          <option value="both">Both</option>
+        </select>
+          <button id="toggleDeletions">Toggle Deletions</button>
       </div>
       <div class="row">
         <div class="col-5">   

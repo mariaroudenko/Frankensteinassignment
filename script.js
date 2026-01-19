@@ -106,7 +106,7 @@ function documentLoader() {
     if (event.target.value == 'both') {
     //write an forEach() method that shows all the text written and modified by both hand (in black?). The forEach() method of Array instances executes a provided function once for each array element.
      texts.forEach(text => {
-  if (text.hand === "#MWS"|"#PBS" || text.rend === "blackink") {console.log(text.content);}
+  if (text.hand === "#MWS"||"#PBS" || text.rend === "blackink") {console.log(text.content);}
 });
     } else if (event.target.value == 'Mary') {
      //write an forEach() method that shows all the text written and modified by Mary in a different color (or highlight it) and the text by Percy in black. 
@@ -127,6 +127,7 @@ elements.forEach(el => {
     el.style.backgroundColor = "lightblue";
     el.style.color = "black";
   } else if (el.getAttribute("hand") === "#MWS") {
+    // Mary: black text
     el.style.color = "black";
     el.style.backgroundColor = "transparent";
   }
