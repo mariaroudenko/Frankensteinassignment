@@ -11,6 +11,11 @@ h1 {
     text-decoration-line: underline;
 }
 
+p {
+text-align: left
+}
+
+
 .intro {
     text-align: center;
     width: 700px;
@@ -67,7 +72,7 @@ a:active{
   background-color: rgb(42, 59, 17);
 }
 
-p {
+.txt {
     text-indent: 10px;
      font-size: 10px;
      text-align:center;
@@ -110,7 +115,15 @@ div.gallery_item div.desc {
   text-align: center;
 }
 
+.page-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 10px 20px;
+}
 
 /*a:link, a:visited {
   background-color: #f44336;
